@@ -165,32 +165,18 @@ h1 {
 }
 
 .featured-demos {
-  display: grid;
-  grid-template-columns: 1fr auto;
   border-top: 1px solid var(--border);
 }
 
 .demo-pc {
-  background: #060a12;
-  overflow: hidden;
-  aspect-ratio: 16/9;
-}
-
-.demo-phone {
-  background: #060a12;
-  overflow: hidden;
-  width: 120px;
-  border-left: 1px solid var(--border);
-}
-
-.demo-pc img,
-.demo-phone img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+}
+
+.demo-pc img {
+  width: 100%;
+  height: auto;
   display: block;
 }
-
 .project {
   padding: 1.25rem 0;
   border-bottom: 1px solid var(--border);
@@ -273,19 +259,6 @@ h1 {
   color: var(--muted);
   font-size: 11px;
   letter-spacing: 0.05em;
-}
-
-@media (max-width: 500px) {
-  .featured-demos {
-    grid-template-columns: 1fr;
-  }
-  .demo-phone {
-    width: 100%;
-    border-left: none;
-    border-top: 1px solid var(--border);
-    aspect-ratio: 9/16;
-    max-height: 200px;
-  }
 }
 
 .fade-in {
